@@ -1,17 +1,11 @@
 # 自分のBMIを知って健康になろう！！
-### 身長と体重を入力することでBMI値の計算をするプログラムです。
+## 身長と体重を入力することでBMI値の計算をするプログラムです。
+###計算 BMI = 体重(kg) ÷　(身長(m) × 身長(m))
 
-import java.util.*;
+> 18.5未満	低体重(痩せ型)　
+> 18.5〜25未満	普通体重
+> 25〜30未満	肥満(1度)
+> 30〜35未満	肥満(2度)
+> 35〜40未満	肥満(3度)
+    40以上   	肥満(4度)
 
-public class Main{
-	public static void main (String[] args ){
-		Scanner stdIn = new Scanner(System.in);
-
-        double sintyou = stdIn.nextDouble(); 
-        double taijyu = stdIn.nextDouble(); 
-
-		double bmi = taijyu / Math.pow(sintyou, 2);
-
-		System.out.println(bmi);
-	}
-}
